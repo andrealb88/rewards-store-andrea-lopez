@@ -8,7 +8,7 @@ import { Notification } from "./components/notification/Notification";
 import { Router } from "./routers/Router";
 
 function App() {
-  const { setUser } = useContext(AppContext);
+  let { setUser } = useContext(AppContext);
   useEffect(() => {
     getUser().then((user) => {
       setUser(user);

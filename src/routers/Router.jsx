@@ -1,4 +1,4 @@
-import { Switch, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { Home } from "../pages/Home";
 import { History } from "../pages/History";
 import { Points } from "../pages/Points";
@@ -7,19 +7,19 @@ import React from "react";
 
 export const Router  = () => {
   return (
-    <Switch>
-      <Route exact path="/rewards-store-andrea-lopez-bravo">
+    <Routes>
+      <Route exact path="/rewards-store-andrea-lopez">
         <Home />
       </Route>
-      <Route path="/rewards-store-andrea-lopez-bravo/history">
+      <Route path="/rewards-store-andrea-lopez/history">
         <History />
       </Route>
-      <Route path="/rewards-store-andrea-lopez-bravo/points">
+      <Route path="/rewards-store-andrea-lopez/points">
         <Points/>
       </Route>
       <Route path="*">
         <NotFound />
       </Route>
-    </Switch>
+    </Routes>
   );
 };

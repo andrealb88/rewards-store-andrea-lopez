@@ -20,6 +20,7 @@ function App() {
       <Nav />
       <Header />
       <Router />
+      <AppContext />
     </div>
   );
 }

@@ -8,14 +8,14 @@ import { Notification } from "./components/notification/Notification";
 import { Router } from "./routers/Router";
 
 function App() {
-  let { setUser } = useContext(AppContext);
+  const { setUser } = useContext(AppContext);
   useEffect(() => {
     getUser().then((user) => {
       setUser(user);
     });
   }, [setUser]);
   return (
-    <div className="App">
+    <div>
       <Notification />
       <Nav />
       <Header />

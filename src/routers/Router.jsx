@@ -8,18 +8,10 @@ import React from "react";
 export const Router  = () => {
   return (
     <Routes>
-      <Route exact path="/rewards-store-andrea-lopez">
-        <Home />
-      </Route>
-      <Route path="/rewards-store-andrea-lopez/history">
-        <History />
-      </Route>
-      <Route path="/rewards-store-andrea-lopez/points">
-        <Points/>
-      </Route>
-      <Route path="*">
-        <NotFound />
-      </Route>
+      <Route path="/" element={<Home />}/>
+      <Route path="/history" element={<History/> }/>
+      <Route path="/points" element={<Points/>}/>
+      <Route path="/*"element={<NotFound />}/>
     </Routes>
   );
 };

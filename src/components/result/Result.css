@@ -1,0 +1,7 @@
+.result {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: var(--lightgrey);
+  justify-content: space-around;
+  display: flex;
+}

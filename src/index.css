@@ -1,13 +1,71 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: li;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  width: 100vw;
+  max-width: 1400px;
+  min-width: 400px;
+}
+
+:root {
+  --white: #ffffff;
+  --lightblue: linear-gradient(
+    180deg,
+    rgba(10, 212, 250, 0.86) 0%,
+    rgba(37, 187, 241, 0.86) 100%
+  );
+  --grey: #d9d9d9;
+  --lightgrey: #f2f2f2;
+  --textLightGrey: #a3a3a3;
+  --textDarkGrey: #616161;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.normal-text {
+  font-size: 15px;
+  color: var(--textDarkGrey);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 480px) {
+  .normal-text {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 600px) {
+  .normal-text {
+    font-size: 24px;
+  }
 }

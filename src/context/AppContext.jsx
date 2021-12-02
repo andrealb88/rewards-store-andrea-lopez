@@ -31,8 +31,7 @@ export default function AppProvider({ children }) {
         setUser(newUser)
       }
     return(
-        <AppContext.Provider value={{user,
-            setUser,  
+        <AppContext.Provider value={{  
             handlerAddPoint, 
             handlerSubtractPoint, 
             points,

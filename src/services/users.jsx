@@ -9,3 +9,4 @@ export const getUser = async()=>{
         console.log(error)
     }
 }
+
